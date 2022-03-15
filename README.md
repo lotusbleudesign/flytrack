@@ -1,8 +1,8 @@
 # FlyTrack
 
-![Screenshot](https://github.com/lotusbleudesign/flytrack/blob/main/images/airplane.svg)
+![Screenshot](https://github.com/lotusbleudesign/flytrack/blob/main/src/assets/airplane.svg)
 
-## FlyTrack
+## Description
 
 Real-Time Flight Tracker Simple React
 

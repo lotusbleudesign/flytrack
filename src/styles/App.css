@@ -1,0 +1,69 @@
+@tailwind base;
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+body {
+  margin: 50px;
+  background: #66b2c5;
+  font-family: "Lobster", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  background: #fef7f8;
+  align-items: center;
+  border-radius: 8px;
+  height: 80vh;
+  width: 80vw;
+}
+
+.text {
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  color: #d73e6d;
+}
+
+h1 {
+  font-weight: bold;
+}
+/* .home {
+  color: #ebf0eb;
+  font-size: x-large;
+  text-align: center;
+  overflow-y: auto;
+   position: absolute;
+top: 50%;
+left: 50%; 
+transform: translate(-50%, -50%);
+} */
+
+.todo {
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin: 6px;
+  padding: 3px 10px;
+}
+
+.todo-list {
+  background: #ebf0eb;
+  border-radius: 4px;
+  width: 80vw;
+  padding: 5px;
+  margin: 10px;
+  align: center;
+}

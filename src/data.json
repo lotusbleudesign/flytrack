@@ -1,0 +1,46 @@
+{
+  "flight_date": "2022-03-16",
+  "flight_status": "scheduled",
+  "departure": {
+    "airport": "Tauranga",
+    "timezone": "Pacific/Auckland",
+    "iata": "TRG",
+    "icao": "NZTG",
+    "terminal": null,
+    "gate": null,
+    "delay": null,
+    "scheduled": "2022-03-16T06:00:00+00:00",
+    "estimated": "2022-03-16T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Christchurch International",
+    "timezone": "Pacific/Auckland",
+    "iata": "CHC",
+    "icao": "NZCH",
+    "terminal": null,
+    "gate": "11",
+    "baggage": null,
+    "delay": null,
+    "scheduled": "2022-03-16T08:00:00+00:00",
+    "estimated": "2022-03-16T08:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Air New Zealand",
+    "iata": "NZ",
+    "icao": "ANZ"
+  },
+  "flight": {
+    "number": "8807",
+    "iata": "NZ8807",
+    "icao": "ANZ8807",
+    "codeshared": null
+  },
+  "aircraft": null,
+  "live": null
+}
