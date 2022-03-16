@@ -20,7 +20,7 @@ function HomePage() {
   useEffect(() => {
 
     const API_URL = `${process.env.REACT_APP_API_URL}${process.env.REACT_APP_FLYTRACER_API_KEY}`
-
+    console.log("API_URL", API_URL)
     fetch(`${API_URL}`)
       .then((response) => {
         if (!response.ok) {
@@ -65,7 +65,6 @@ function HomePage() {
     setStatus(data.photos[value].rover.status)
 
   }
-
 
   return (
 

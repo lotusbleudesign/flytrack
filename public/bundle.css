@@ -466,103 +466,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-/* Start purging... */
-
-/* Stop purging. */
-
-/* Start purging... */
-
-/* Stop purging. */
-
-.App {
-  text-align: center;
-  font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue";
-  font-size: large;
-  background: #154863;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  padding: 10px;
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.card {
-  width: 70vw;
-  margin: 5px;
-}
-
-.todo-list {
-  margin: auto;
-  background: #ebf0eb;
-  border-radius: 4px;
-  width: 80vw;
-  padding: 5px;
-  margin: 10px;
-  align: center;
-}
-
-input {
-  align-items: center;
-  border-radius: 3px;
-  width: 95%;
-  height: 25px;
-  background: #fff;
-  justify-content: space-between;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #222;
-  margin: 0;
-  padding: 0;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-h1,
-h2,
-h3 {
-  margin-bottom: 20px;
+body {
+  margin: 50px;
+  background: #c0cccc;
+  font-family: "Lobster", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #ddd;
+  color: #9a1837;
   text-decoration: none;
 }
 
-p {
-  margin-bottom: 10px;
+h1 {
+  font-weight: bold;
 }
 
-.my-10 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  align-items: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
 }
-
-.my-20 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.container {
-  max-width: 1000px;
-  display: block;
-  margin: auto;
-}
-
-/* HEADER */
 
 .header {
-  background: #0c2360;
-  color: #fff;
+  border-radius: 25px 25px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  background: #071538;
+  color: #d73e6d;
   overflow: auto;
   line-height: 1.7em;
 }
+
+.text {
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  color: #d73e6d;
+}
+
+/* Header navigation*/
 
 .header nav h1 {
   float: left;
@@ -591,33 +559,78 @@ p {
 }
 
 .header nav ul li a:hover {
-  background: #6989cc;
+  background: #fdf7f8;
   display: block;
-  color: #3c6381;
+  color: #d73e6d;
   font-weight: 700;
 }
 
-/* CONTENT */
-
-/* About */
-
-.about {
-  padding: 100px 0px;
-  text-align: center;
-  /* min-height: 83vh; */
-  overflow-y: auto;
+.spacing {
+  padding: 10px;
+  margin: 10px;
 }
 
-.home {
-  padding: 100px 0px;
-  text-align: center;
-  /* min-height: 83vh; */
-  overflow-y: auto;
+/* Card */
+
+.border-radius {
+  border-radius: 10px;
 }
 
-.projet {
-  padding: 100px 0px;
-  text-align: center;
-  /* min-height: 83vh; */
-  overflow-y: auto;
+.photoDetails {
+  margin: auto;
+  flex-direction: column;
+  align-self: stretch;
+  display: flex;
+  padding: 40px;
+}
+
+.photo {
+  margin: auto;
+  flex-direction: column;
+  padding: 0px 10px;
+  flex-basis: 45%;
+  align-self: stretch;
+}
+
+.titre {
+  flex-basis: 20%;
+  font-weight: bold;
+}
+
+.content {
+  flex-direction: column;
+  flex: auto;
+}
+
+.vote {
+  flex-basis: 15%;
+}
+
+.description {
+  font-size: larger;
+}
+
+.btn {
+  width: 180px;
+  height: 30px;
+  background: #c0cccc;
+  border-radius: 5px;
+  border: solid 0px;
+}
+
+.btn:hover {
+  background: #d73e6d;
+  color: #fff;
+}
+
+.next {
+  flex-basis: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favori {
+  display: flex;
+  flex-direction: column;
 }
