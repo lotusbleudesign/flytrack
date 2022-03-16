@@ -1,41 +1,21 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import AboutPage from "./About";
+import Settings from "./Settings";
 import HomePage from "./Home";
-
+import Favoris from './Favoris';
 import './../styles/App.css';
-
+import Header from './Header';
 
 export default function App() {
 
-  useEffect(() => {
-    //apiCall()
-    console.log("->Onload")
-  }, [])
-
   return (
     <>
-      <div className='app'>
-        <Routes>
-          <Route exact path="about" element={<AboutPage className="about" />} />
-          <Route path="*" element={<HomePage className="home" />} />
-        </Routes>
-      </div>
+      <Header />
+      <Routes>
+        <Route exact path="favoris" element={<Favoris />} />
+        <Route exact path="settings" element={<Settings />} />
+        <Route path="*" element={<HomePage className="home" />} />
+      </Routes>
     </>
   );
 }
-
-
-/******** Functions  *********/
-
-// const apiCall = async () => {
-
-//   const API_KEY = process.env.REACT_APP_FLYTRACER_API_KEY;
-//   const API_URL = `http://api.aviationstack.com/v1/flights?access_key=${API_KEY}&limit=50`
-//   await fetch(API_URL)
-//     .then(res => res.json())
-//     .then(data => {
-//       console.log(data)
-//     })
-//     .catch(err => JSON.stingify(err))
-// }
